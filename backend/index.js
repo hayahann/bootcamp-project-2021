@@ -102,4 +102,27 @@ app.delete("/api/recipe", (req, res) => {
     });
 });
 
+
+app.delete("/api/recipe/:recipeName/ingredient", async (req, res) => {
+    // remove instruction from recipe of recipeName
+    const updatedRecipe = req.body.updatedRecipe;
+    const recipe = await Recipe.findByIdAndUpdate(updatedRecipe._id, updatedRecipe, (err) => {
+        if (err) {
+            return next(err);
+        }
+        res.send(`Ingredient was removed from ${updatedRecipe.recipeName} recipe`);
+    });
+});
+
+app.delete("/api/recipe/:recipeName/instruction", async (req, res) => {
+    // remove instruction from recipe of recipeName
+    const updatedRecipe = req.body.updatedRecipe;
+    const recipe = await Recipe.findByIdAndUpdate(updatedRecipe._id, updatedRecipe, (err) => {
+        if (err) {
+            return next(err);
+        }
+        res.send(`Step was removed from ${updatedRecipe.recipeName} recipe`);
+    });
+});
+
 app.listen(3001);

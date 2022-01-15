@@ -1,8 +1,12 @@
 #recipe-prev {
-    background-color: #d7ceb2;
+    background-color: rgb(215, 206, 178);
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.test {
+    background-color: blue;
 }

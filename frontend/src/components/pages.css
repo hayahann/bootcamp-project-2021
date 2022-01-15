@@ -1,21 +1,75 @@
-#page{
-  margin: 20px;  
+#title {
+  text-align: center;
+  padding-top: 25vh;
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #4c5760;
+  font-size: 100px;
 }
 
+.small-header{
+  font-family:'Times New Roman', Times, serif;
+}
+
+.apple {
+  background-image : url("./kitchen.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-position: center;
+}
+
+.recipe-title{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.recipe-intro{
+  margin-top: 100px;
+}
+
+ #page{
+  margin-left: 50px;
+  margin-right: 50px;
+} 
+
 #steps{
-    background-color: #d7ceb2;
+    /* background-color: #d7ceb2; */
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 30px;
 }
 
 #ingredients {
-    background-color: #d7ceb2;
+    /* background-color: #d7ceb2; */
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+p, li {
+  /* font-family: 'Open Sans Condensed'; */
+  font-size: 18px;
+}
+
+.add-button {
+  flex-direction: row;
+}
+
+.bio {
+  margin-top: 80px;
+  margin-left: 100px;
+  width: 50%;
+}
+
+.recipe-image {
+  margin-top: 30px;
+  height: auto;
+  width: 500px;
+
 }
